@@ -105,15 +105,15 @@ label[for=password]{
 #forgotPassword {
     position: relative;
     top: 235px;
-    width: 50%;
+    width: 100%;
     display: block;
     text-align: center; 
 }
 
 #forgotUserName {
   position: relative;
-  top: 235px;
-  width: 50%;
+  top: 250px;
+  width: 100%;
   display: block;
   text-align: center; 
 }
