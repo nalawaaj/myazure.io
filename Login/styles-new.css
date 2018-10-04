@@ -401,6 +401,10 @@ label[for=password]{
   }
 }
 
+.create {
+  display: none;
+} 
+
 .create p {
   font-size:0px;
   padding-top: 94px;
