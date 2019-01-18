@@ -672,12 +672,10 @@
   <script>
     function makePwdToggler(pwd) {
       // Create show-password checkbox
-      var checkbox = document.createElement('a');
-      //checkbox.setAttribute('type', 'checkbox');
+      var checkbox = document.createElement('input');
+      checkbox.setAttribute('type', 'checkbox');
       var id = pwd.id + 'toggler';
       checkbox.setAttribute('id', id);
-      checkbox.setAttribute('href', '');
-      checkbox.setAttribute('onclick', toggle);
 
       var label = document.createElement('label');
       label.setAttribute('for', id);
