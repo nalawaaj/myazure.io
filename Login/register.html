@@ -681,8 +681,8 @@
       var textnode = document.createTextNode("CLICK ME"); 
       checkbox.appendChild(textnode);
 
-      var id = pwd.id + 'toggler';
-      checkbox.setAttribute('id', id);
+      //var id = pwd.id + 'toggler';
+      //checkbox.setAttribute('id', id);
 
       //var label = document.createElement('label');
       //label.setAttribute('for', id);
@@ -690,8 +690,6 @@
 
       var div = document.createElement('div');
       div.appendChild(checkbox);
-      div.appendChild(label);
-      div.setAttribute('class', 'showpwd');
 
       // Add show-password checkbox under password input
       pwd.insertAdjacentElement('afterend', div);
