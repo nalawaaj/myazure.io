@@ -689,13 +689,11 @@
       // Add toggle password callback
       function toggle() {
         if (pwd.type === 'password') {
-          pwd.type = 'text';
-          var textnode = document.createTextNode("Hide Password"); 
-          button.appendChild(textnode);
+          pwd.type = 'text'; 
+          button.value = "Hide Password";
         } else {
           pwd.type = 'password';
-          var textnode = document.createTextNode("Show Password"); 
-          button.appendChild(textnode);
+          button.value = "Show Password";
         }
       }
       button.onclick = toggle;
