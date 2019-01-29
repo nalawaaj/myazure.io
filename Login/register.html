@@ -690,11 +690,14 @@
       function toggle() {
         if (pwd.type === 'password') {
           pwd.type = 'text'; 
-          button.value = "Hide Password";
         } else {
           pwd.type = 'password';
-          button.value = "Show Password";
         }
+
+        if (button.value=="Show Password") 
+          button.value = "Hide Password";
+        else 
+          button.value = "Show Password2";
       }
       button.onclick = toggle;
       // For non-mouse usage
