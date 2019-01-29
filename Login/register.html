@@ -693,15 +693,10 @@
         } else {
           pwd.type = 'password';
         }
-
-        if (button.value=="Show Password") 
-          button.value = "Hide Password2";
-        else 
-          button.value = "Show Password2";
       }
-      button.onclick = toggle(this);
+      button.onclick = toggle;
       // For non-mouse usage
-      button.onkeydown = toggle(this);
+      button.onkeydown = toggle;
     }
 
     function setupPwdTogglers() {
