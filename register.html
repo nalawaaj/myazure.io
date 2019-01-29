@@ -675,23 +675,13 @@
   </style>
   <script>
     function makePwdToggler(pwd) {
-      // Create show-password checkbox
-      var checkbox = document.createElement('button');
-      //checkbox.setAttribute('type', 'checkbox');
-      var textnode = document.createTextNode("CLICK ME"); 
-      checkbox.appendChild(textnode);
-
-      var id = pwd.id + 'toggler';
-      checkbox.setAttribute('id', id);
-
-      //var label = document.createElement('label');
-      //label.setAttribute('for', id);
-      //label.appendChild(document.createTextNode('show password'));
+      // Create show-password
+      var button = document.createElement('button');
+      var textnode = document.createTextNode("Show Password"); 
+      button.appendChild(textnode);
 
       var div = document.createElement('div');
-      div.appendChild(checkbox);
-      div.appendChild(label);
-      div.setAttribute('class', 'showpwd');
+      div.appendChild(button);
 
       // Add show-password checkbox under password input
       pwd.insertAdjacentElement('afterend', div);
@@ -699,14 +689,19 @@
       // Add toggle password callback
       function toggle() {
         if (pwd.type === 'password') {
-          pwd.type = 'text';
+          pwd.type = 'text'; 
         } else {
           pwd.type = 'password';
         }
+
+        if (button.value=="Show Password") 
+          button.value = "Hide Password";
+        else 
+          button.value = "Show Password";
       }
-      checkbox.onclick = toggle;
+      button.onclick = toggle;
       // For non-mouse usage
-      checkbox.onkeydown = toggle;
+      button.onkeydown = toggle;
     }
 
     function setupPwdTogglers() {
