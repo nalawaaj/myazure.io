@@ -687,7 +687,7 @@
       pwd.insertAdjacentElement('afterend', div);
 
       // Add toggle password callback
-      function toggle() {
+      function toggle(button) {
         if (pwd.type === 'password') {
           pwd.type = 'text'; 
         } else {
@@ -695,13 +695,13 @@
         }
 
         if (button.value=="Show Password") 
-          button.value = "Hide Password";
+          button.value = "Hide Password2";
         else 
           button.value = "Show Password2";
       }
-      button.onclick = toggle;
+      button.onclick = toggle(this);
       // For non-mouse usage
-      button.onkeydown = toggle;
+      button.onkeydown = toggle(this);
     }
 
     function setupPwdTogglers() {
