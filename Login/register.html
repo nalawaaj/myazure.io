@@ -691,16 +691,16 @@
         if (pwd.type === 'password') {
           pwd.type = 'text';
           var textnode = document.createTextNode("Hide Password"); 
-          checkbox.appendChild(textnode);
+          button.appendChild(textnode);
         } else {
           pwd.type = 'password';
           var textnode = document.createTextNode("Show Password"); 
-          checkbox.appendChild(textnode);
+          button.appendChild(textnode);
         }
       }
-      checkbox.onclick = toggle;
+      button.onclick = toggle;
       // For non-mouse usage
-      checkbox.onkeydown = toggle;
+      button.onkeydown = toggle;
     }
 
     function setupPwdTogglers() {
