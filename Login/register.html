@@ -688,7 +688,9 @@
       var div = document.createElement('div');
       div.appendChild(checkbox);
       div.appendChild(label);
-		
+	  div.setAttribute("class",pwd.id+'div');
+	  
+	  
       // Add show-password checkbox under password input
       pwd.insertAdjacentElement('afterend', div);
 
