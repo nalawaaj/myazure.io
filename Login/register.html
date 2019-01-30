@@ -678,6 +678,7 @@
       // Create show-password
       var button = document.createElement('A');
       var textnode = document.createTextNode("Show Password"); 
+	  var copy-textnode = textnode;
       button.appendChild(textnode);
 
       var div = document.createElement('div');
@@ -690,10 +691,14 @@
       function toggle(button) {
         if (pwd.type === 'password') {
           pwd.type = 'text'; 
-		  button.textContent = 'Hide';
+		  var textnode1 = document.createTextNode("Hide");
+		  button.replaceChild(textnode1,copy-textnode);
+		  copy-textnode = textnode1;
         } else {
           pwd.type = 'password';
-		  button.textContent = 'Show';
+		  var textnode2 = document.createTextNode("Hide");
+		  button.replaceChild(textnode2,copy-textnode);
+		  copy-textnode = textnode2;
         }
       }
       button.onclick = toggle;
