@@ -689,9 +689,8 @@
       div.appendChild(checkbox);
       div.appendChild(label);
 		
-	  var rootNode = pwd.getRootNode();
       // Add show-password checkbox under password input
-      rootNode.insertAdjacentElement('afterend', div);
+      pwd.insertAdjacentElement('afterend', div);
 
       // Add toggle password callback
       function toggle() {
