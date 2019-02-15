@@ -692,7 +692,7 @@
 	  
 	  
       // Add show-password checkbox under password input
-      pwd.insertAdjacentElement('afterend', div);
+      pwd.parentNode.insertAdjacentElement('afterend', div);
 
       // Add toggle password callback
       function toggle() {
