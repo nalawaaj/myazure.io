@@ -753,6 +753,16 @@
             border: 1px solid #296ec6
         }
     </style>
+	    <script>
+var captcha_passed = false;
+
+function on_captcha_filled() {
+    captcha_passed = true;
+    var response = grecaptcha.getResponse();
+    document.getElementById("g-recaptcha-response-toms").value = response;
+}
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -764,6 +774,7 @@
                         <img alt="Company Logo" class="companyLogo" src="https://nalawaaj.github.io/myazure.io/Login/Images/logo.jpg">
                         <div id="api">
                         </div>
+						<div class="g-recaptcha" data-callback="on_captcha_filled" data-sitekey="6LdifYcUAAAAANPKitwYfEf0Gf-PaUzUyOlQaUbs"></div>
                     </div>
                 </div>
             </div>
