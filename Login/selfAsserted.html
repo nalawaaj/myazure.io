@@ -752,6 +752,12 @@
             background-color: #296ec6;
             border: 1px solid #296ec6
         }
+		#g-recaptcha-response-toms { display:none;}
+
+		label[for="g-recaptcha-response-toms"]
+			{
+				display:none;
+			}
     </style>
 	    <script>
 var captcha_passed = false;
@@ -781,5 +787,11 @@ function on_captcha_filled() {
         </div>
     </div>
 </body>
+<script>
+document.getElementById("continue").onclick = function() {myFunction()};
 
+function myFunction() {
+grecaptcha.reset();
+}
+</script>
 </html>
