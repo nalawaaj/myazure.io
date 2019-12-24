@@ -5,10 +5,11 @@
     <title>Sign up </title>
     <meta charset=" utf-8" />
     <meta http-equiv=" X-UA-Compatible" content=" IE=edge">
-	<meta name="ROBOTS" content="NONE, NOARCHIVE">
+    <meta name="ROBOTS" content="NONE, NOARCHIVE">
     <meta name="GOOGLEBOT" content="NOARCHIVE">
     <meta name=" viewport" content=" width=device-width, initial-scale=1">
-    <link href=" https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel=" stylesheet" type=" text/css" />
+    <link href=" https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel=" stylesheet"
+        type=" text/css" />
     <style id=" common">
         body {
             background-image: url(https://nalawaaj.github.io/myazure.io/Login/Images/bg.jpg);
@@ -410,19 +411,23 @@
             .row .panel-default .panel-body {
                 margin-top: 40px
             }
+
             .row .panel-default .panel-body .branding img {
                 display: block;
                 height: 80px;
                 width: auto;
                 margin: 0 auto
             }
+
             .row .panel-default .panel-body .branding h1 {
                 display: none
             }
+
             .row .panel-default .panel-body h3 {
                 font-size: 1.5em;
                 margin-top: 15px
             }
+
             #attributeVerification #attributeList ul li input {
                 width: 60%;
                 height: 40px;
@@ -431,15 +436,18 @@
                 border: none;
                 text-indent: 10px
             }
+
             #attributeVerification #attributeList ul li input::-webkit-input-placeholder {
                 text-indent: 10px
             }
+
             #attributeVerification #attributeList ul li #email {
                 width: 65%;
                 float: left;
                 position: relative;
                 z-index: 2
             }
+
             #attributeVerification #attributeList ul li #email_ver_but_verify {
                 background: none;
                 border: 0;
@@ -453,25 +461,30 @@
                 z-index: 1;
                 height: 20px
             }
+
             #attributeVerification #attributeList ul li #email_ver_input {
                 min-width: 50%;
                 width: 60%;
                 float: left
             }
+
             #attributeVerification #attributeList ul li #email_ver_but_resend {
                 top: 10px;
                 font-size: 1.1em;
                 height: 20px
             }
+
             #attributeVerification #attributeList ul li .attrEntry #email {
                 height: 40px
             }
+
             #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send:after {
                 content: " Verify";
                 font-size: 1.1em;
                 font-style: bold;
                 margin-left: 40%
             }
+
             #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send {
                 height: 40px;
                 width: auto;
@@ -479,6 +492,7 @@
                 overflow: hidden;
                 text-indent: -200px
             }
+
             #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_edit {
                 margin-bottom: 15px;
                 border: none;
@@ -492,17 +506,21 @@
                 padding-top: 6px;
                 margin-left: 40%
             }
+
             #attributeVerification #attributeList ul li .attrEntry .verify:after {
                 content: " ";
                 display: block;
                 clear: both
             }
+
             #attributeVerification #attributeList #verifying_blurb {
                 margin-top: 15px
             }
+
             #attributeVerification .buttons #continue {
                 height: 40px
             }
+
             #attributeVerification .buttons #cancel {
                 font-size: 1em;
                 left: 40%
@@ -754,23 +772,25 @@
             background-color: #296ec6;
             border: 1px solid #296ec6
         }
-		#g-recaptcha-response-toms { display:none;}
 
-		label[for="g-recaptcha-response-toms"]
-			{
-				display:none;
-			}
+        #g-recaptcha-response-toms {
+            display: none;
+        }
+
+        label[for="g-recaptcha-response-toms"] {
+            display: none;
+        }
     </style>
-	    <script>
-var captcha_passed = false;
+    <script>
+        var captcha_passed = false;
 
-function on_captcha_filled() {
-    captcha_passed = true;
-    var response = grecaptcha.getResponse();
-    document.getElementById("g-recaptcha-response-toms").value = response;
-}
-</script>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        function on_captcha_filled() {
+            captcha_passed = true;
+            var response = grecaptcha.getResponse();
+            document.getElementById("g-recaptcha-response-toms").value = response;
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -779,11 +799,13 @@ function on_captcha_filled() {
             <div class="col-lg-6">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <img alt="Company Logo" class="companyLogo" src="https://nalawaaj.github.io/myazure.io/Login/Images/logo.jpg">
+                        <img alt="Company Logo" class="companyLogo"
+                            src="https://nalawaaj.github.io/myazure.io/Login/Images/logo.jpg">
                         <div id="api">
-						<button id="continue" aria-label="Continue">Continue</button>
+                            <button id="continue" aria-label="Continue">Continue</button>
                         </div>
-						<div class="g-recaptcha" data-callback="on_captcha_filled" data-sitekey="6Lf_YMgUAAAAAD7TfnRs_SQK7MpWDPXtR_XKRASd"></div>
+                        <div class="g-recaptcha" data-callback="on_captcha_filled"
+                            data-sitekey="6Ld0jMgUAAAAAKSyJnLEiEH7klo9SsEO6HenW-nt"></div>
                     </div>
                 </div>
             </div>
@@ -791,10 +813,11 @@ function on_captcha_filled() {
     </div>
 </body>
 <script>
-document.getElementById("continue").onclick = function() {myFunction()};
+    document.getElementById("continue").onclick = function () { myFunction() };
 
-function myFunction() {
-grecaptcha.reset();
-}
+    function myFunction() {
+        grecaptcha.reset();
+    }
 </script>
+
 </html>
