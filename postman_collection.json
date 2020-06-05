@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "9a2e5c21-4ada-4a3a-8d23-12c6ec1cac20",
+		"name": "M1Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "d60f9777-60ae-46fa-86e7-5540fa4ce185",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "Z1ink1oLgRYMR1CnE65uB9zW3sNgycfHnHBK7QpsWHo=",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "https://graph.windows.net",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.windows.net/M1PROD.onmicrosoft.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"windows",
+						"net"
+					],
+					"path": [
+						"M1PROD.onmicrosoft.com",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Username",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSIsImtpZCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLndpbmRvd3MubmV0IiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZGU5MDZhZDktNjI1YS00NDM4LTgzMjUtNGY3Zjg2YzA5NjE0LyIsImlhdCI6MTU4Njc4NDI3MiwibmJmIjoxNTg2Nzg0MjcyLCJleHAiOjE1ODY3ODgxNzIsImFpbyI6IjQyZGdZTEJJaTloaWZ5cHUrcjVlbStiSDMxZlpBZ0E9IiwiYXBwaWQiOiJkNjBmOTc3Ny02MGFlLTQ2ZmEtODZlNy01NTQwZmE0Y2UxODUiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kZTkwNmFkOS02MjVhLTQ0MzgtODMyNS00ZjdmODZjMDk2MTQvIiwib2lkIjoiZmM1MDM2NjYtYWMyZi00ZDFlLWI0NmEtNDFmOTZkMjI2ZTU2Iiwicm9sZXMiOlsiRGlyZWN0b3J5LlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiZmM1MDM2NjYtYWMyZi00ZDFlLWI0NmEtNDFmOTZkMjI2ZTU2IiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IkFTIiwidGlkIjoiZGU5MDZhZDktNjI1YS00NDM4LTgzMjUtNGY3Zjg2YzA5NjE0IiwidXRpIjoieGViWUdzcURNa0M3cHBHY05vVV9BQSIsInZlciI6IjEuMCJ9.czemUdmx5yV3O6VbLQu0SmaAycf53wLr6cHcgumvV6s5lgwwDauwfybHfoayXd86nQNjabJpmGPRGanSSBGwYBRc2dPl80BXPieBbOAUjCag74ORqQ08hsgqsLOnBv30GdF_z_nw2iiQedaL_O3DNRqsfirEDfWgK0Bk20nyq4o-D3hWN65RSOv78EGBZqBt-IPwNUUBla73PZFcL7Ae__8lZ_q7NA6mn3JcPot6IaXjBEX_q2SK--NQPe8h0Svcf9x85_zfI-SA0GChFZkMCOYWMLnXKLfWnUZQVFSClAQrC15sOCiQkGwN7NaetcXF-pIePiEdaetpIVTn1N32JA"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "873fdf8a-2755-41b5-a9de-089faa6f0ab5",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "AZLGvQYXydQHL4dJnvJcgpddiIAW7ONRlgxEUxIDRLk=",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "https://graph.microsoft.com",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://graph.windows.net/M1PROD.onmicrosoft.com/users?api-version=1.6&$filter=signInNames/any(x:x/value eq '33445566')",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"windows",
+						"net"
+					],
+					"path": [
+						"M1PROD.onmicrosoft.com",
+						"users"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.6"
+						},
+						{
+							"key": "$filter",
+							"value": "signInNames/any(x:x/value eq '33445566')"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Users EMail-Mobile",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSIsImtpZCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLndpbmRvd3MubmV0IiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZGU5MDZhZDktNjI1YS00NDM4LTgzMjUtNGY3Zjg2YzA5NjE0LyIsImlhdCI6MTU4Njc4NDI3MiwibmJmIjoxNTg2Nzg0MjcyLCJleHAiOjE1ODY3ODgxNzIsImFpbyI6IjQyZGdZTEJJaTloaWZ5cHUrcjVlbStiSDMxZlpBZ0E9IiwiYXBwaWQiOiJkNjBmOTc3Ny02MGFlLTQ2ZmEtODZlNy01NTQwZmE0Y2UxODUiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9kZTkwNmFkOS02MjVhLTQ0MzgtODMyNS00ZjdmODZjMDk2MTQvIiwib2lkIjoiZmM1MDM2NjYtYWMyZi00ZDFlLWI0NmEtNDFmOTZkMjI2ZTU2Iiwicm9sZXMiOlsiRGlyZWN0b3J5LlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiZmM1MDM2NjYtYWMyZi00ZDFlLWI0NmEtNDFmOTZkMjI2ZTU2IiwidGVuYW50X3JlZ2lvbl9zY29wZSI6IkFTIiwidGlkIjoiZGU5MDZhZDktNjI1YS00NDM4LTgzMjUtNGY3Zjg2YzA5NjE0IiwidXRpIjoieGViWUdzcURNa0M3cHBHY05vVV9BQSIsInZlciI6IjEuMCJ9.czemUdmx5yV3O6VbLQu0SmaAycf53wLr6cHcgumvV6s5lgwwDauwfybHfoayXd86nQNjabJpmGPRGanSSBGwYBRc2dPl80BXPieBbOAUjCag74ORqQ08hsgqsLOnBv30GdF_z_nw2iiQedaL_O3DNRqsfirEDfWgK0Bk20nyq4o-D3hWN65RSOv78EGBZqBt-IPwNUUBla73PZFcL7Ae__8lZ_q7NA6mn3JcPot6IaXjBEX_q2SK--NQPe8h0Svcf9x85_zfI-SA0GChFZkMCOYWMLnXKLfWnUZQVFSClAQrC15sOCiQkGwN7NaetcXF-pIePiEdaetpIVTn1N32JA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"signInNames\": [\r\n                {\r\n                    \"type\": \"emailAddress\",\r\n                    \"value\": \"ajay@gmail.com\"\r\n                },\r\n                {\r\n                    \"type\": \"phoneNumber\",\r\n                    \"value\": \"86009936\"\r\n                },\r\n                {\r\n                    \"type\": \"phoneNumber\",\r\n                    \"value\": \"33445566\"\r\n                }\r\n            ]\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://graph.windows.net/M1PROD.onmicrosoft.com/users/5373f51d-0764-473b-bd6b-8224cbffc0cd?api-version=1.6",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"windows",
+						"net"
+					],
+					"path": [
+						"M1PROD.onmicrosoft.com",
+						"users",
+						"5373f51d-0764-473b-bd6b-8224cbffc0cd"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "1.6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
