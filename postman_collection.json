@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "7114943b-fc6e-4548-a20b-9cf7d8c6e0ab",
+		"name": "AzureAD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "5a612cab-1504-412f-8ecb-7f9db855ccd9",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "NI_z8ksO/NORd1/qV21Gpv[yf]Fg4k/R",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "https://graph.microsoft.com/.default",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/Infy796135outlook.onmicrosoft.com/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"Infy796135outlook.onmicrosoft.com",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IlNnTk40dnpMVG1pczBIWWRvTkpMV2c5NkRvYV9WSHdQS2lTNWlUb3NHejAiLCJhbGciOiJSUzI1NiIsIng1dCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSIsImtpZCI6IllNRUxIVDBndmIwbXhvU0RvWWZvbWpxZmpZVSJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwiaWF0IjoxNTg2NjkxNjM5LCJuYmYiOjE1ODY2OTE2MzksImV4cCI6MTU4NjY5NTUzOSwiYWlvIjoiNDJkZ1lIamp4WmVkK2FiQS83bFFVaDV2aWV3Y0FBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJTYW1wbGVNaWNyb3NmdEdyYXBoIiwiYXBwaWQiOiI1YTYxMmNhYi0xNTA0LTQxMmYtOGVjYi03ZjlkYjg1NWNjZDkiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwib2lkIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1Iiwicm9sZXMiOlsiVXNlci5SZWFkV3JpdGUuQWxsIiwiRGlyZWN0b3J5LlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1IiwidGlkIjoiMjM4ZjQ0OTEtM2YxNy00MDdlLThkMzAtMTlkOGU5MTM4ODNlIiwidXRpIjoibjNXV00yeWJjVS1pdW5XTXpOb2NBQSIsInZlciI6IjEuMCIsInhtc190Y2R0IjoxNTQ3NzEzMTAwfQ.Rz-xMLGC94A6FMMRxWAqvYJwBXjZu7bXfLoo_0mc4-kkze-ZZJjsZjWrvZqwLpYLFjZP9nTx-iHsxuhA7XsjwQ_b4CpmVuEorG9k-Mv1YLExPGxln5-ab5_gNWFwuz4S7uVl3WMqiYPwzsIXcnxCli2y-hQ32J9h1BvfjRHy-4RyR1sSFV-fNFCml6eVJQ6D_xAeJp3DKbWDg3xax4BvzU_L1ViDsYKeGLUq-svBrPE_2Vqa5knbaa5w90JK2UbZwJX0u5syplO2u1zgbs0pJIREVWW172hT4lGyWqG8Uuac7BOXWDM7Y0igaWqoZhj2JQPFYCkzaJQbLaDW_J649A"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "873fdf8a-2755-41b5-a9de-089faa6f0ab5",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "AZLGvQYXydQHL4dJnvJcgpddiIAW7ONRlgxEUxIDRLk=",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "https://graph.microsoft.com",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://graph.microsoft.com/v1.0/users",
+					"protocol": "http",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6Ikg0Yk55dkEwRk5RUEZNN3A4MHAwZ011WjJnbmUzb1RMb09sLUhrc3dZZGciLCJhbGciOiJSUzI1NiIsIng1dCI6ImFQY3R3X29kdlJPb0VOZzNWb09sSWgydGlFcyIsImtpZCI6ImFQY3R3X29kdlJPb0VOZzNWb09sSWgydGlFcyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwiaWF0IjoxNTcxNzQ5MzQzLCJuYmYiOjE1NzE3NDkzNDMsImV4cCI6MTU3MTc1MzI0MywiYWlvIjoiNDJWZ1lJaWRNT2RveGIreTVmeG14UTZ6UzFOU0FBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJTYW1wbGVNaWNyb3NmdEdyYXBoIiwiYXBwaWQiOiI1YTYxMmNhYi0xNTA0LTQxMmYtOGVjYi03ZjlkYjg1NWNjZDkiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwib2lkIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1Iiwicm9sZXMiOlsiVXNlci5SZWFkV3JpdGUuQWxsIiwiRGlyZWN0b3J5LlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1IiwidGlkIjoiMjM4ZjQ0OTEtM2YxNy00MDdlLThkMzAtMTlkOGU5MTM4ODNlIiwidXRpIjoiVGtfa0ZJVlRvRVNyMWVsNWdCNWlBQSIsInZlciI6IjEuMCIsInhtc190Y2R0IjoxNTQ3NzEzMTAwfQ.GLBgKLShDtJnNUdXcbuEykiX6cyIGKyuVXQkv48BGKKyCGc2okFlatsviHyznkI7A7J9If-ZG8fdtZISOahG2WzynVYTaoBbbbvgLN4hwSiVINyEsFqSGPa_X642Eb_MPeOp37ZtVLcQ-8D8lrNz4WSaZrgVqZZzUZuiGgW8IRg1FewFlDCB-fOvaMw7pW6b4Y9NX8ScLUMxv0icvALi2qFdSb-E8ROpFUjoFAfDNa1TKuS6qppnKHusEnQk-YLPMuMddNQcX0g0S0GZ0h_ayZTgbISSYKGuabAEtvxRQ5APgEkqwnveRZbIopSvecoS5W_76bRbfOZDU3PTqBnsfA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accountEnabled\": true,\r\n  \"displayName\": \"Rahul Benjamin\",\r\n   \"givenName\": \"Rahul\",\r\n   \"surname\": \"Benjamin\",\r\n  \"mailNickname\": \"rahulb\",\r\n  \"userPrincipalName\": \"Rahul.Benjamin@Infy796135outlook.onmicrosoft.com\",\r\n  \"passwordProfile\" : {\r\n    \"forceChangePasswordNextSignIn\": true,\r\n    \"password\": \"P@ssword!\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/users",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6Ikg0Yk55dkEwRk5RUEZNN3A4MHAwZ011WjJnbmUzb1RMb09sLUhrc3dZZGciLCJhbGciOiJSUzI1NiIsIng1dCI6ImFQY3R3X29kdlJPb0VOZzNWb09sSWgydGlFcyIsImtpZCI6ImFQY3R3X29kdlJPb0VOZzNWb09sSWgydGlFcyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwiaWF0IjoxNTcxNzQ5MzQzLCJuYmYiOjE1NzE3NDkzNDMsImV4cCI6MTU3MTc1MzI0MywiYWlvIjoiNDJWZ1lJaWRNT2RveGIreTVmeG14UTZ6UzFOU0FBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJTYW1wbGVNaWNyb3NmdEdyYXBoIiwiYXBwaWQiOiI1YTYxMmNhYi0xNTA0LTQxMmYtOGVjYi03ZjlkYjg1NWNjZDkiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8yMzhmNDQ5MS0zZjE3LTQwN2UtOGQzMC0xOWQ4ZTkxMzg4M2UvIiwib2lkIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1Iiwicm9sZXMiOlsiVXNlci5SZWFkV3JpdGUuQWxsIiwiRGlyZWN0b3J5LlJlYWRXcml0ZS5BbGwiXSwic3ViIjoiMzAwNWJkNDUtOWQyNi00Y2YwLWJjMGUtYWI4YTNmMjVmOTA1IiwidGlkIjoiMjM4ZjQ0OTEtM2YxNy00MDdlLThkMzAtMTlkOGU5MTM4ODNlIiwidXRpIjoiVGtfa0ZJVlRvRVNyMWVsNWdCNWlBQSIsInZlciI6IjEuMCIsInhtc190Y2R0IjoxNTQ3NzEzMTAwfQ.GLBgKLShDtJnNUdXcbuEykiX6cyIGKyuVXQkv48BGKKyCGc2okFlatsviHyznkI7A7J9If-ZG8fdtZISOahG2WzynVYTaoBbbbvgLN4hwSiVINyEsFqSGPa_X642Eb_MPeOp37ZtVLcQ-8D8lrNz4WSaZrgVqZZzUZuiGgW8IRg1FewFlDCB-fOvaMw7pW6b4Y9NX8ScLUMxv0icvALi2qFdSb-E8ROpFUjoFAfDNa1TKuS6qppnKHusEnQk-YLPMuMddNQcX0g0S0GZ0h_ayZTgbISSYKGuabAEtvxRQ5APgEkqwnveRZbIopSvecoS5W_76bRbfOZDU3PTqBnsfA"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"displayname\": \"Rahul Benjamin2\"\n}"
+				},
+				"url": {
+					"raw": "https://graph.microsoft.com/v1.0/users/Rahul.Benjamin@Infy796135outlook.onmicrosoft.com",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"users",
+						"Rahul.Benjamin@Infy796135outlook.onmicrosoft.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
