@@ -27,7 +27,7 @@ public class Utility2 {
 		//RSAPublicKey publicKey =null;
 		byte[] keyBytes=null;
 		try {
-			keyBytes = Files.readAllBytes(Paths.get("D:\\OpenSSL\\bin\\aem.m1prod.der"));
+			keyBytes = Files.readAllBytes(Paths.get("D:\\OpenSSL\\bin\\cert.der"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -35,7 +35,7 @@ public class Utility2 {
 		
 		/*byte[] keyBytesPub =null;
 		try {
-			keyBytesPub = Files.readAllBytes(Paths.get("D:\\OpenSSL\\bin\\aem.m1prodpub.der"));
+			keyBytesPub = Files.readAllBytes(Paths.get("D:\\OpenSSL\\bin\\certpub.der"));
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -71,11 +71,6 @@ public class Utility2 {
 	    //claims.setClaim("appEmail","ajay@test.com"); 
 	    //claims.setClaim("appPhone","33694499");
 	    claims.setClaim("fullName","John Doe"); 
-	    claims.setClaim("nickName","John"); 
-	    claims.setClaim("Dob","2000-09-05"); 
-	    claims.setClaim("DocNumber","S6355610F"); 
-	    //claims.setClaim("FINType","Employment Pass"); 
-	    //claims.setClaim("PassExpiry","2021-10-10"); 
 	    claims.setClaim("Gender","Male");
 	    
 	    
